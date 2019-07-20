@@ -37,7 +37,7 @@
               <input type="text" class="form-control" value ="{{ old ('book_price') }}" name="book_price"/> 
           </div> 
           <button type="submit" class="btn btn-primary">Create Book</button> 
-          <button type="submit" class="btn btn-danger">Back</button> 
+          <a href="{{ route('index') }}" class="btn btn-danger">Back</a> 
       </form> 
   </div> 
 </div> 

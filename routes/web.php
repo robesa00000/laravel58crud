@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Route::resource('books', 'BookController');
+
+Route::get('/', 
+    'BookController@index'
+)->name('index');
+
+Route::get('/create', 
+    'BookController@create'
+)->name('create');

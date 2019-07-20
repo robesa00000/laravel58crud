@@ -13,7 +13,7 @@
  </div><br />
  @endif
 
- <button type="submit" class="btn btn-primary">Create Book</button> 
+ <a href="{{ route('create') }}" class="btn btn-primary">Create Book</a> 
  <table class="table table-striped">
  <thead>
  <tr>
