@@ -12,12 +12,22 @@
 */
 
 
+Route::get('/', function() {
+    return view('auth.login');
+});
+Auth::routes();
+
 Route::resource('books', 'BookController');
 
-Route::get('/', 
+Route::get('/books', 
     'BookController@index'
 )->name('index');
 
 Route::get('/create', 
     'BookController@create'
 )->name('create');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

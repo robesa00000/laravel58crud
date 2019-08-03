@@ -13,6 +13,10 @@
  </div><br />
  @endif
 
+ 
+ 
+ <a href="{{ url('/logout') }}"class="btn btn-default float-right"> logout </a>
+ 
  <a href="{{ route('create') }}" class="btn btn-primary">Create Book</a> 
  <table class="table table-striped">
  <thead>
